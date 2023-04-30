@@ -1,8 +1,9 @@
 import React from "react";
 
-export default function Button (props){
-    //console.log("Button Component renders")
+function Button (props){
+    console.log("Button Component renders")
     return(
         <button onClick={props.handleclick}>Submit</button>
     )
 }
+export default React.memo(Button)
